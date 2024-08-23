@@ -1,12 +1,22 @@
 # Storage@Google Cloud
 ## Store
-### Block 
+### Block
+#### PD 
+#### Hyperdisk
 ### File
+#### Filestore
+#### Google Cloud NetApp Volume
+#### Parralelstore
 ### Object
+#### Cloud Storage
 ## Move
-### Online
-### Offline
-## Protect 
+### ONLINE: 
+  - Storage Transfer Service
+### OFFLINE: 
+  - Transfer Appliance
+### Other Tools:
+  - gcloud cp, gsutil 
+## Protect
 ### Primitives
 ### Backup and DR Service
 ### Backup for GKE
