@@ -15,7 +15,7 @@ Standard performance provisioning is ideal for workloads that can't tolerate per
 ### Advanced Capacity Storage Pools 
 Advanced capacity storage pools offer thin-provisioning and data reduction, allowing you to provision more disk space than physically available. Disks in these pools consume capacity based on actual data written after reduction, enabling over-provisioning. The pool's used capacity is determined by written data, not provisioned disk space, and can exceed provisioned capacity by up to 500%.
 
-#### Advanced Performance Storage Pools
+### Advanced Performance Storage Pools
 Advanced performance provisioning is ideal for workloads with varied peak usage times, allowing shared performance resources across disks. The pool dynamically allocates performance as needed, and only used amounts consume resources. Thin provisioning lets you allocate up to 500% more IOPS/throughput to disks than provisioned for the pool. In Balanced pools with Advanced performance, all disk operations consume resources. If aggregate disk performance reaches the pool's limit, contention occurs, potentially impacting performance. Compute Engine tries to automatically add performance during prolonged contention. Monitor pools to avoid running out of performance and understand workload behavior during contention.
 
 ## References
