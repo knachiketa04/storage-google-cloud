@@ -8,7 +8,7 @@ Hyperdisk Storage Pools let you create a pool with the total capacity and perfor
 
 ## Types of Pools - Standard
 
-![1724668336352](image/hyperdisk-pool/1724668336352.png)
+![1724668487908](image/hyperdisk-pool/1724668487908.png)
 
 ### Standard Capacity Storage Pools
 
