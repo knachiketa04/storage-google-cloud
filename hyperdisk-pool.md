@@ -18,7 +18,7 @@ Standard capacity storage pools allow you to add disks until the total provision
 
 Standard performance provisioning is ideal for workloads that can't tolerate performance limitations due to storage pool constraints or have correlated performance spikes. It doesn't support thin-provisioning, and disks don't share performance resources. The total performance of all disks can't exceed the pool's provisioned amount. When creating the pool, ensure enough performance for combined peak needs. Each disk's provisioned performance should cover its peak requirements. You can add disks until total provisioned IOPS reaches the pool's limit. In Balanced pools with Standard performance, the first 3,000 IOPS and 140 MiBps per disk (baseline) don't consume pool resources, only exceeding amounts do.
 
-## Types of Pools - Performance
+## Types of Pools - Advanced
 
 ### Advanced Capacity Storage Pools
 
