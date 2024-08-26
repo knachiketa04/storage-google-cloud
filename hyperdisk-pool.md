@@ -6,12 +6,11 @@ Hyperdisk Storage Pools let you create a pool with the total capacity and perfor
 
 
 ## Types of Pools
-**Standard Capacity Storage Pools**
+### Standard Capacity Storage Pools 
 Standard capacity storage pools allow you to add disks until the total provisioned capacity of all disks reaches the pool's limit. Disks in these pools use capacity like regular disks.
 
-**Advanced Capacity Storage Pools**
+### Advanced Capacity Storage Pools 
 Advanced capacity storage pools offer thin-provisioning and data reduction, allowing you to provision more disk space than physically available. Disks in these pools consume capacity based on actual data written after reduction, enabling over-provisioning. The pool's used capacity is determined by written data, not provisioned disk space, and can exceed provisioned capacity by up to 500%.
-
 
 ## References
 [Documentation-About Hyperdisk Storage Pools](https://cloud.google.com/compute/docs/disks/storage-pools)
