@@ -6,17 +6,19 @@ Hyperdisk Storage Pools are pre-purchased bundles of capacity, throughput, and I
 
 Hyperdisk Storage Pools let you create a pool with the total capacity and performance your workloads need, then create disks within it to attach to VMs. These disks can be created with larger sizes or performance limits than initially needed, simplifying planning and allowing for future growth. If workloads grow, you can increase the pool's provisioned capacity and performance, letting individual disks use more resources up to their defined limits. This consolidates disk management and reduces costs. However, if an Advanced capacity pool reaches full utilization, writes to all disks fail until space is freed. Active monitoring and understanding workload behavior during out-of-space errors is crucial. In Advanced performance pools, auto-grow helps prevent performance issues by increasing available IOPS if contention is detected.
 
-## Types of Pools
+## Types of Pools - Standard
+
+![1724668336352](image/hyperdisk-pool/1724668336352.png)
 
 ### Standard Capacity Storage Pools
-
-![1724667532149](image/hyperdisk-pool/1724667532149.png)
 
 Standard capacity storage pools allow you to add disks until the total provisioned capacity of all disks reaches the pool's limit. Disks in these pools use capacity like regular disks.
 
 ### Standard Performance Storage Pools
 
 Standard performance provisioning is ideal for workloads that can't tolerate performance limitations due to storage pool constraints or have correlated performance spikes. It doesn't support thin-provisioning, and disks don't share performance resources. The total performance of all disks can't exceed the pool's provisioned amount. When creating the pool, ensure enough performance for combined peak needs. Each disk's provisioned performance should cover its peak requirements. You can add disks until total provisioned IOPS reaches the pool's limit. In Balanced pools with Standard performance, the first 3,000 IOPS and 140 MiBps per disk (baseline) don't consume pool resources, only exceeding amounts do.
+
+## Types of Pools - Performance
 
 ### Advanced Capacity Storage Pools
 
