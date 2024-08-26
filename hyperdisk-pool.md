@@ -20,6 +20,8 @@ Standard performance provisioning is ideal for workloads that can't tolerate per
 
 ## Types of Pools - Advanced
 
+![1724669898477](image/hyperdisk-pool/1724669898477.png)
+
 ### Advanced Capacity Storage Pools
 
 Advanced capacity storage pools offer thin-provisioning and data reduction, allowing you to provision more disk space than physically available. Disks in these pools consume capacity based on actual data written after reduction, enabling over-provisioning. The pool's used capacity is determined by written data, not provisioned disk space, and can exceed provisioned capacity by up to 500%.
